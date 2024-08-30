@@ -9,9 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.testtask.talkingbeartom",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Доступ до мікрофона потрібен для запису вашого голосу."
+      }
     },
     "android": {
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",

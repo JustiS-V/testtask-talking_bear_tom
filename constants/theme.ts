@@ -27,6 +27,22 @@ export const Colors = {
   },
 };
 
+export const TalkingTomColors = {
+  screenBackground: '#0f1116',
+  primaryText: '#f2f4f7',
+  secondaryText: '#98a2b3',
+} as const;
+
+export const TalkingTomSizes = {
+  horizontalPadding: 20,
+  characterHeightPercent: '72%',
+  characterMaxWidth: 460,
+  statusMarginTop: 16,
+  statusFontSize: 16,
+  hintMarginTop: 10,
+  hintFontSize: 12,
+} as const;
+
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
